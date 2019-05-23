@@ -22,9 +22,8 @@ test:
 
 production:
   <<: *default
-  host: ec2-54-235-167-210.compute-1.amazonaws.com
-  database: d73eq52tc1hb0k
-  user: exlrhwtmiqfhja
-  port: 5432
-  password: c19dcb9dc2db8d12b43fe3e9b95c75c434031584d1d8e03e682ea6dba67fab23
-
+  host: t89yihg12rw77y6f.cbetxkdyhwsb.us-east-1.rds.amazonaws.com
+  username: s77q9npym9wy0z5s
+  password: caso55et11o0all8
+  port: 3306
+  database: yzwok2nffrif4mjm
