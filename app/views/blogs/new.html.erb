@@ -1,0 +1,51 @@
+
+<style>
+  #wrapper{
+    width:700px;
+    margin:0 auto;
+    height:380px;
+    margin-top: 30px;
+    position: center;
+  }
+  .panel{
+    margin-top: 100px;
+    margin-left: 200px;
+    margin-right: 200px;
+    position: center;
+  }
+  .h{
+    margin-left: 300px;
+  }
+</style>
+
+<div class="panel panel-default panel">
+  <div class="panel-heading"><h2 class="h">Add Information</h2></div>
+
+  <div id="wrapper">
+
+<%= form_for @blog do |f| %>
+
+  <%= f.label :title  %>
+  <%= f.text_field :title ,class:"form-control"%>
+
+      <input type="hidden" name="blog[user_id]" value="<%=  current_user.id %>">
+  <br><br>
+
+  <%= f.label :description  %>
+  <%= f.text_field :description ,class:"form-control"%>
+
+  <br><br>
+
+  <%= f.label :author  %>
+  <%= f.text_field :author ,class:"form-control" %>
+
+  <br><br>
+
+
+  <%= f.submit "submit",class:"btn btn-primary" %>
+
+
+<% end %>
+
+  </div>
+</div>
